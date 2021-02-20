@@ -2,7 +2,7 @@
 # Assume that the user input like an example
 # For example "2 4 88 2 78 88 34"
 input_stream = input()
-# Change type of the input to integer
+# Convert type of the input to integer
 input_stream = [int(x) for x in input_stream.split()]
 
 # Initial variable

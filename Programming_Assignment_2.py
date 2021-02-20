@@ -1,15 +1,15 @@
 import re
 
-# Receive input from the user
+# Receive input from the user (only one line of input)
 input_stream = input()
 
 # Count the word "LINE MELODY"
 COUNT_LINE_MELODY = re.findall("LINE MELODY", input_stream)
-print("Number of 'LINE MELODY':" + str(len(COUNT_LINE_MELODY)))
+print("Number of 'LINE MELODY': " + str(len(COUNT_LINE_MELODY)))
 
 # Count the word "LINE" and "Call"
 COUNT_LINE_AND_Call = re.findall("LINE", input_stream) + re.findall("Call", input_stream)
-print("Number of 'LINE' and 'Call':" + str(len(COUNT_LINE_AND_Call)))
+print("Number of 'LINE' and 'Call': " + str(len(COUNT_LINE_AND_Call)))
 
 # Print out the phase "express your feelings" if this phrase appear in the input
 express_your_feelings = re.findall("express your feelings", input_stream)
